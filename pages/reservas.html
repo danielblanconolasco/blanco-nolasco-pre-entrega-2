@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/efc9165130.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Michigan Adopciones | Agenda</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <a href="http://wa.me/56956151111" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+            </div>
+            <div class="header-top-right">
+                <a href="https://goo.gl/maps/wxBRzNM1pL1v5tsu5" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-solid fa-location-dot"></i> Santiago, Chile</a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-top">
+                <div class="nav-logo">
+                    <a href="../index.html"><img src="../assets/img/logo.svg" alt=""></a>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="servicios.html"><i class="fa-solid fa-shield-cat"></i> Servicios</a></li>
+                        <li><a href="peluqueria.html"><i class="fa-solid fa-scissors"></i> Peluquería</a></li>
+                        <li><a href="reservas.html"><i class="fa-solid fa-calendar-days"></i> Agenda tu cita</a></li>
+                        <li><a href="adopta.html"><i class="fa-solid fa-hand-holding-heart"></i> Adopta</a></li>
+                        <li><a href="contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a></li>
+                    </ul>
+                    <form class="form-nav" action="">
+                        <input type="text" id="busqueda" placeholder="Buscar">
+                        <label for="busqueda"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div class="flex-container-100 hero-agenda-background">
+            <section class="hero">
+                <div class="highlight-text">
+                    <h1 class="white">La Agenda felina</h2>
+                        <h3 class="white">Gestiona su vida felina con facilidad</h3>
+                </div>
+            </section>
+        </div>
+        <div class="flex-container">
+            <section class="form-agenda">
+                <h4 class="violet-dark">Agenda de atención</h4>
+                <p class="grey-dark">Llena el formulario y a la brevedad te contestaremos la disponibilidad.</p>
+                <form>
+
+                    <label for="nombre-usuario">Nombre Humano</label>
+                    <input type="text" id="usuario" placeholder="Ingresa tu nombre humano" required>
+                    <label for="mail"></label>
+                    <input type="mail" id="mail" placeholder="Ingresa tu mail" required>
+
+                    <fieldset>
+                        <legend>Sexo de la mascota</legend>
+                        <label for="hombre">Macho</label>
+                        <input type="radio" name="sexo" id="macho" value="macho">
+                        <label for="mujer">Hembra</label>
+                        <input type="radio" name="sexo" id="hembra" value="hembra">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Tipo de servicio</legend>
+                        <label for="hombre">Peluquería</label>
+                        <input type="radio" name="servicio" id="Pelquería" value="Pelquería">
+                        <label for="consulta">Consultas</label>
+                        <input type="radio" name="servicio" id="consulta" value="consulta">
+                        <label for="mujer">Vacunación</label>
+                        <input type="radio" name="servicio" id="vacunacion" value="vacunacion">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Peluquería</legend>
+                        <label for="corte">Corte y peinado</label>
+                        <input type="radio" name="servicio" id="corte" value="corte">
+                        <label for="bano">Baño y aseo</label>
+                        <input type="radio" name="servicio" id="bano" value="bano">
+                        <label for="desenredado">Desenredado y deslanado</label>
+                        <input type="radio" name="servicio" id="desenredado" value="desenredado">
+                        <label for="tratamiento">Tratamientos de spa</label>
+                        <input type="radio" name="servicio" id="tratamiento" value="tratamiento">
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Consultas</legend>
+                        <label for="control">Control y revisión</label>
+                        <input type="radio" name="consultas" id="control" value="control">
+                        <label for="deparasitacion">Desparasitación</label>
+                        <input type="radio" name="consultas" id="deparasitacion" value="deparasitacion">
+                        <label for="dental">Cuidado dental</label>
+                        <input type="radio" name="consultas" id="dental" value="dental">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Vacunación</legend>
+                        <label for="primera">Primera vez</label>
+                        <input type="radio" name="vacunas" id="primera" value="primera">
+                        <label for="refuerzo">Refuerzos</label>
+                        <input type="radio" name="vacunas" id="refuerzo" value="refuerzo">
+                    </fieldset>
+
+
+                    <label for="">Acepta términos y condiciones</label>
+                    <input type="checkbox" name="aceptar" id="aceptar" value="1" required>
+
+                    <button class=" btn btn-contacto" input type="submit" value="Enviar"><a
+                            href="../pages/contacto.html">Contáctanos para agendar</a></button>
+                </form>
+
+            </section>
+        </div>
+        <div class="flex-container">
+            <section class="cards-services">
+                <div class="cards-services-title">
+                    <h3 class="violet-dark">Conoce el costo de los servicios</h3>
+                    <h4 class="grey-dark">Pelquería</h4>
+                </div>
+                <div class="cards-services-content">
+                    <article class="card-service">
+                        <img src="../assets/img/groom-dark.svg" alt="" class="card-service-img">
+                        <h5 class="violet-dark">Corte y peinado</h5 class="grey-dark">
+                        <h6 class="grey-dark">$ 9.990</h6>
+                    </article>
+                    <article class="card-service">
+                        <img src="../assets/img/bano-aseo-dark.svg" alt="" class="card-service-img">
+                        <h5 class="violet-dark">Baño y aseo</h5 class="grey-dark">
+                        <h6 class="grey-dark">$ 11.990</h6>
+                    </article>
+                    <article class="card-service">
+                        <img src="../assets/img/desenredado-dark.svg" alt="" class="card-service-img">
+                        <h5 class="violet-dark">Desenredado y deslanado</h5 class="grey-dark">
+                        <h6 class="grey-dark">$ 8.990</h6>
+                    </article>
+                    <article class="card-service">
+                        <img src="../assets/img/spa-dark.svg" alt="" class="card-service-img">
+                        <h5 class="violet-dark">Tratamientos de spa</h5 class="grey-dark">
+                        <h6 class="grey-dark">$ 19.990</h6>
+                    </article>
+                </div>
+            </section>
+            <section class="cards-services">
+                <div class="cards-services-title">
+                    <h4 class="grey-dark">Consultas</h4>
+                </div>
+                <div class="cards-services-content">
+                    <article class="card-service">
+                        <img src="../assets/img/consulta-dark.svg" alt="" class="card-service-img">
+                        <h5 class="violet-dark">Control y revisión</h5 class="grey-dark">
+                        <h6 class="grey-dark">$ 9.990</h6>
+                    </article>
+                    <article class="card-service">
+                        <img src="../assets/img/desparasitacion.svg" alt="" class="card-service-img">
+                        <h5 class="violet-dark">Desparasitación</h5 class="grey-dark">
+                        <h6 class="grey-dark">$ 11.990</h6>
+                    </article>
+                    <article class="card-service">
+                        <img src="../assets/img/cuidado-dental.svg" alt="" class="card-service-img">
+                        <h5 class="violet-dark">Cuidado Dental</h5 class="grey-dark">
+                        <h6 class="grey-dark">$ 8.990</h6>
+                    </article>
+                </div>
+            </section>
+            <section class="cards-services">
+                <div class="cards-services-title">
+                    <h4 class="grey-dark">Vacunación</h4>
+                </div>
+                <div class="cards-services-content">
+                    <article class="card-service">
+                        <img src="../assets/img/vacunas-dark.svg" alt="" class="card-service-img">
+                        <h5 class="violet-dark">Primera vez</h5 class="grey-dark">
+                        <h6 class="grey-dark">$ 9.990</h6>
+                    </article>
+                    <article class="card-service">
+                        <img src="../assets/img/refuerzos.svg" alt="" class="card-service-img">
+                        <h5 class="violet-dark">Refuerzos</h5 class="grey-dark">
+                        <h6 class="grey-dark">$ 11.990</h6>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-hero">
+                <div class="footer-img">
+                    <a href="../index.html"><img src="../assets/img/logo-footer.png" alt=""></a>
+                </div>
+                <div class="footer-menu white">
+                    <ul>
+                        <li><a href="servicios.html"><i class="fa-solid fa-shield-cat"></i> Servicios</a></li>
+                        <li><a href="peluqueria.html"><i class="fa-solid fa-scissors"></i> Peluquería</a></li>
+                        <li><a href="reservas.html"><i class="fa-solid fa-calendar-days"></i> Agenda tu cita</a></li>
+                        <li><a href="adopta.html"><i class="fa-solid fa-hand-holding-heart"></i> Adopta</a></li>
+                        <li><a href="contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

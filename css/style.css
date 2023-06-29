@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src:url('../assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('../assets/fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+body {
+    font-family: 'Mona Sans', sans-serif;
+}
+.violet-light {
+    color: #5A1BA5;
+}
+
+.violet-dark {
+    color: #461483;
+}
+a {
+    text-decoration: none; 
+}
+.grey-light {
+    color: #868686;
+}
+.grey-dark {
+    color: #424242;
+}
+.gradient-violet {
+    background: rgb(58,20,103);
+    background: linear-gradient(28deg, rgba(58,20,103,1) 0%, rgba(90,27,165,1) 100%);
+}
+.white {
+    color: white;
+}
+header {
+    font-weight: 400;
+    font-size: .875rem;
+    width: 100%;
+    background: #461483;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: -1.625rem;
+    z-index: 2;
+    }
+.header-top{
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+    padding:.3125rem .625rem;
+}
+.header-top a {
+    color: white;
+}
+nav {
+    width: 100%;
+    background-color: #5A1BA5;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    color: white;
+}
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding:.625rem;
+    gap: 1rem;
+}
+.nav-logo, .nav-right {
+    display: flex;
+    align-items: center;
+}
+.nav-right {
+    gap: 1rem;
+}
+.nav-right ul {
+display: flex;
+gap: 1rem;
+}
+.nav-right li {
+    list-style: none;
+}
+.form-nav {
+    display: flex;
+}
+.form-nav input {
+    border-radius: .625rem 0 0 .625rem;
+    border: none;
+    border-right: 2px solid #461483;
+    padding-left: .3125rem;
+}
+.form-nav input:focus-visible {
+    outline: none;
+}
+.form-nav input ::placeholder {
+    padding-left: .625rem;
+}
+.form-nav label {
+    border: none;
+    border-radius: 0 .625rem .625rem 0;
+    background-color: #ffff;
+    color:#461483;
+    padding: 0 .9375rem;
+}
+
+p{
+    line-height: 1.4rem;
+}
+.navbar {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.flex-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.flex-container-100 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding-top: .9375rem;
+    gap: 2rem;
+}
+.hero-text {
+    width: 50%;
+}
+.hero-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mona Sans';
+    font-weight: 900;
+}
+
+h1{
+    font-size: 4.5rem;
+    line-height: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+    line-height: 4.4rem;
+}
+h3 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+}
+h4 {
+    font-size: 2.2rem;
+    line-height: 2rem;
+}
+h5 {
+    font-size: 1.8rem;
+    line-height: 1.6rem;
+}
+h6 {
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+}
+.cards-title {
+    padding:1rem 2rem;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: .9375rem;
+    overflow: hidden;
+    width: calc(100% * 0.25 - 1rem);
+    background-color: #FDFBFF;
+}
+.card-content {
+    padding: .9375rem;
+}
+.card-content h5 {
+    padding-bottom: 1rem;
+}
+.card-img {
+    position: relative;
+}
+.like-card-img {
+    position: absolute;
+    left: calc(100% - 3rem);
+    top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.card img, .card-img img {
+    display: block;
+    width: 100%;
+}
+.card-ver-mas {
+    display: flex;
+    justify-content: flex-end;
+}
+.large {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.small {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+.section-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.section-servicios {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    padding: 2rem 0;
+}
+.servicios {
+    background-color: #868686;
+    margin: 2rem 0;
+}
+.servicios-title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cards-servicios {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.card-servicio {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% * 0.5 - 1rem);
+    align-items: center;
+    gap: 1rem   ;
+}
+.card-servicio-img {
+    display: flex;
+    justify-content: center;
+}
+.card-servicio-img img {
+    width: 50%;
+}
+.card-servicio-content h6{
+    font-weight: 700;
+}
+.container-footer {
+    width: 90%;
+}
+footer {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background-color: #25103F;
+    justify-content: space-around;
+}
+.footer-hero {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.footer-img {
+    display: flex;
+}
+.footer-menu li{
+    list-style: none;
+}
+.footer-menu ul {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+.footer-menu a{
+    color: #B0B0B0;
+}
+
+.section-principal {
+    background-image: url("../assets/img/gato-peluqueria.jpg");
+}
+.hero-services-background {
+    background-image: url("../assets/img/cat-services-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 42vh;
+}
+
+.highlight-text {
+    width: 100%;
+    text-align: center;
+    text-shadow: 0.5rem 0.5rem 0.5rem #000000a1;
+}
+
+.services {
+    background-color: #B0B0B0;
+}
+.cards-services {
+    display: flex;
+    gap: 2rem;
+}
+.cards-services-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cards-services-content {
+    display: flex;
+    gap: 2rem;    
+}
+.card-service {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card-service-description {
+    display: flex;
+    border-radius: 2rem;
+    background-color: white;
+    gap: 16px;
+    width: calc(100% * 0.5 - 1rem);
+}
+.card-text {
+display: flex;
+flex-direction: column;
+
+}
+.card-service-img {
+    width: 5rem;
+}
+.professionals {
+    display: flex;
+}
+.card-veterinary {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+.vet-title {
+    text-align: center;
+}
+.vet-img {
+    width: 50%;
+}
+.vet-img img {
+    width: 100%;
+    border-radius: 3rem;
+}
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-family: "Mona Sans";
+    font-weight: 700;
+}
+.btn-contacto {
+    background-color: #25103F;
+}
+.btn-contacto a {
+    color: white;
+}
+.hero-groom-background {
+    background-image: url("../assets/img/cat-groom-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 42vh;
+}
+.hero-agenda-background {
+    background-image: url("../assets/img/cat-agenda-vet-01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 42vh;
+}
+.hero-contact-background {
+    background-image: url("../assets/img/cat-contact-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 42vh;
+}
+.cat-highlighted {
+    padding-top: 2rem;
+}
+.cat-highlighted-item {
+    display: flex;
+    justify-content:flex-start;
+    gap: 1rem;
+}
+.cat-highlighted-img {
+    width: 40%;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+}
+.cat-highlighted-img img {
+    width: 100%;
+}
+.cat-highlighted-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.cat-highlighted-content ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cat-description ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cat-description-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cat-description {
+    width: 100%;
+}
+.bold-p {
+    font-weight: 500;
+}
+.contact-hero {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.form-agenda {
+    width: calc(100% * 0.5 - 1rem);
+    display: flex;
+    flex-direction: column;
+}
+.contact-map {
+    width: calc(100% * 0.5 - 1rem);
+    display: flex;
+}
+.cards-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+grid-auto-rows: auto;
+grid-gap: 1rem;
+width: 100%;
+}
+.card-grid-item {
+border-radius: .9375rem;
+overflow: hidden;
+background-color: #FDFBFF;
+}
