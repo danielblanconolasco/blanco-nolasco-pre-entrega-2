@@ -75,6 +75,7 @@ nav a {
     padding:.625rem;
     gap: 1rem;
 }
+
 .nav-logo, .nav-right {
     display: flex;
     align-items: center;
@@ -497,4 +498,37 @@ width: 100%;
 border-radius: .9375rem;
 overflow: hidden;
 background-color: #FDFBFF;
+}
+
+@media (max-width:1024px){
+    header {
+        top: -5rem;
+    }
+
+    .nav-right{
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-right ul {
+        justify-content:space-evenly;
+    }
+    
+    .nav-top {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:556px){
+    header {
+        position: relative;
+        top:0px
+    }
+    .nav-right ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px){
+    .
 }
