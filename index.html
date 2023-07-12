@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/efc9165130.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Michigan Adopciones</title>
 </head>
 
 <body>
     <header>
-        <div class="header-top ">
+        <div class="header-top container">
             <div class="header-top-left">
                 <a href="http://wa.me/56956151111" target="_blank" rel="noopener noreferrer"><i
                         class="fa-brands fa-whatsapp"></i> Whatsapp</a>
@@ -22,21 +23,32 @@
                         class="fa-solid fa-location-dot"></i> Santiago, Chile</a>
             </div>
         </div>
-        <nav>
-            <div class="nav-top">
-                <div class="nav-logo">
-                    <a href="index.html"><img src="./assets/img/logo.svg" alt=""></a>
-                </div>
-                <div class="nav-right">
-                    <ul>
-                        <li><a href="./pages/servicios.html"><i class="fa-solid fa-shield-cat"></i> Servicios</a></li>
-                        <li><a href="./pages/peluqueria.html"><i class="fa-solid fa-scissors"></i> Peluquería</a></li>
-                        <li><a href="./pages/reservas.html"><i class="fa-solid fa-calendar-days"></i> Agenda tu cita</a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/img/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-mobile-michigan"
+                    aria-controls="menu-mobile-michigan" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon custom-toggler"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0 gap-1" id="menu-mobile-michigan">
+                    <ul class="navbar-nav flex-sm-row flex-column gap-1 gap-sm-3 me-auto mb-2 mb-lg-0 align-items-center justify-content-sm-between">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/servicios.html"><i class="fa-solid fa-shield-cat"></i> Servicios</a>
                         </li>
-                        <li><a href="./pages/adopta.html"><i class="fa-solid fa-hand-holding-heart"></i> Adopta</a></li>
-                        <li><a href="./pages/contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/peluqueria.html"><i class="fa-solid fa-scissors"></i> Peluquería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/reservas.html"><i class="fa-solid fa-calendar-days"></i> Agenda tu cita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/adopta.html"><i class="fa-solid fa-hand-holding-heart"></i> Adopta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a>
+                        </li>
                     </ul>
-                    <form class="form-nav" action="">
+                    <form class="form-nav justify-content-center" action="">
                         <input type="text" id="busqueda" placeholder="Buscar">
                         <label for="busqueda"><i class="fa-solid fa-magnifying-glass"></i></label>
                     </form>
@@ -46,7 +58,7 @@
         </div>
     </header>
     <main>
-        <div class="flex-container">
+        <div class="container">
             <section class="hero">
                 <div class="hero-text">
                     <h1 class="violet-dark">¡Adopta un Michi!</h1>
@@ -69,10 +81,9 @@
                             <img src="./assets/img/cat-1.jpg" alt="">
                         </div>
                         <div class="card-content">
-                            <h5 class="grey-dark">Luna</h5>
-                            <p class="grey-light">Una gatita rescatada, busca con ilusión una familia amorosa que le
-                                brinde un hogar lleno de cariño y seguridad.</p>
-                            <p class="card-ver-mas"><a href="./pages/adopta.html" class=" violet-light">Ver más </a></p>
+                            <h4 class="grey-dark">Luna</h4>
+                            <p class="grey-light">Una gatita rescatada, busca con ilusión una familia amorosa que le brinde un hogar lleno de cariño y seguridad.</p>
+                            <p class="card-ver-mas mb-0"><a href="./pages/adopta.html" class=" violet-light">Ver más </a></p>
                         </div>
                     </div>
                     <div class="card-grid-item">
@@ -81,10 +92,9 @@
                             <img src="./assets/img/cat-2.jpg" alt="">
                         </div>
                         <div class="card-content">
-                            <h5 class="grey-dark">Lola</h5>
-                            <p class="grey-light">Una gata callejera rescatada, espera pacientemente encontrar un hogar
-                                acogedor donde pueda recibir el cuidado y la atención que merece.</p>
-                            <p class="card-ver-mas"><a href="./pages/adopta.html" class=" violet-light">Ver más </a></p>
+                            <h4 class="grey-dark">Lola</h4>
+                            <p class="grey-light">Una gata callejera rescatada, espera pacientemente encontrar un hogar acogedor donde pueda recibir el cuidado y la atención que merece.</p>
+                            <p class="card-ver-mas mb-0"><a href="./pages/adopta.html" class=" violet-light">Ver más </a></p>
                         </div>
                     </div>
                     <div class="card-grid-item">
@@ -93,10 +103,9 @@
                             <img src="./assets/img/cat-3.jpg" alt="">
                         </div>
                         <div class="card-content">
-                            <h5 class="grey-dark">Simba</h5>
-                            <p class="grey-light">Un gato abandonado rescatado, anhela ser parte de una familia amorosa
-                                que le brinde un hogar estable y afectuoso.</p>
-                            <p class="card-ver-mas"><a href="./pages/adopta.html" class=" violet-light">Ver más </a></p>
+                            <h4 class="grey-dark">Simba</h4>
+                            <p class="grey-light">Un gato abandonado rescatado, anhela ser parte de una familia amorosa que le brinde un hogar estable y afectuoso.</p>
+                            <p class="card-ver-mas mb-0"><a href="./pages/adopta.html" class=" violet-light">Ver más </a></p>
                         </div>
                     </div>
                     <div class="card-grid-item">
@@ -105,10 +114,9 @@
                             <img src="./assets/img/cat-4.jpg" alt="">
                         </div>
                         <div class="card-content">
-                            <h5 class="grey-dark">Mia</h5>
-                            <p class="grey-light">Una gatita rescatada de maltrato, aguarda con esperanza ser adoptada
-                                por alguien dispuesto a brindarle un hogar lleno de amor y cuidado..</p>
-                            <p class="card-ver-mas"><a href="./pages/adopta.html" class=" violet-light">Ver más </a></p>
+                            <h4 class="grey-dark">Mia</h4>
+                            <p class="grey-light">Una gatita rescatada de maltrato, aguarda con esperanza ser adoptada por alguien dispuesto a brindarle un hogar lleno de amor y cuidado..</p>
+                            <p class="card-ver-mas mb-0"><a href="./pages/adopta.html" class=" violet-light">Ver más </a></p>
                         </div>
                     </div>
                 </section>
@@ -117,9 +125,8 @@
         <div class="flex-container-100 flex-container-bottom gradient-violet">
             <section class="section-servicios">
                 <section class="servicios-title white">
-                    <h4>Servicios disponibles</h4>
-                    <p>Para poder funcionar, contamos con servicios veterinarios al público y así mantener el
-                        funcionamiento de nuestro albergue.</p>
+                    <h3>Servicios disponibles</h3>
+                    <p>Para poder funcionar, contamos con servicios veterinarios al público y así mantener el funcionamiento de nuestro albergue.</p>
                 </section>
                 <section class="cards-servicios">
                     <article class="card-servicio">
@@ -127,7 +134,7 @@
                             <img src="./assets/img/consulta.svg" alt="">
                         </div>
                         <div class="card-servicio-content">
-                            <h6 class="white">Consulta</h6>
+                            <h4 class="white">Consulta</h4>
                         </div>
                     </article>
                     <article class="card-servicio">
@@ -135,7 +142,7 @@
                             <img src="./assets/img/emergencia.svg" alt="">
                         </div>
                         <div class="card-servicio-content">
-                            <h6 class="white">Emergencia</h56>
+                            <h4 class="white">Emergencia</h56>
                         </div>
                     </article>
                     <article class="card-servicio">
@@ -143,7 +150,7 @@
                             <img src="./assets/img/vacunas.svg" alt="">
                         </div>
                         <div class="card-servicio-content">
-                            <h6 class="white">Vacunas</h6>
+                            <h4 class="white">Vacunas</h4>
                         </div>
                     </article>
                     <article class="card-servicio">
@@ -151,7 +158,7 @@
                             <img src="./assets/img/hotel.svg" alt="">
                         </div>
                         <div class="card-servicio-content">
-                            <h6 class="white">Hotel</h6>
+                            <h4 class="white">Hotel</h4>
                         </div>
                     </article>
                 </section>
@@ -177,6 +184,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
 
 </html>
