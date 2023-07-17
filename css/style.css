@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Mona Sans', sans-serif!important;
+    font-family: 'Mona Sans', sans-serif;
 }
 .violet-light {
     color: #5A1BA5;
@@ -23,7 +23,7 @@ body {
     color: #461483;
 }
 a {
-    text-decoration: none!important; 
+    text-decoration: none; 
 }
 .grey-light {
     color: #868686;
@@ -36,10 +36,10 @@ a {
     background: linear-gradient(28deg, rgba(58,20,103,1) 0%, rgba(90,27,165,1) 100%);
 }
 .white {
-    color: white!important;
+    color: white;
 }
 .navbar-toggler{
-    color: white!important;
+    color: white;
 }
 .custom-toggler .navbar-toggler {
     border-color: white;
@@ -71,8 +71,8 @@ nav {
     display: flex;
     justify-content: space-around;
 }
-nav a {
-    color: white!important;
+.navbar a {
+    color: white;
 }
 .nav-top {
     display: flex;
