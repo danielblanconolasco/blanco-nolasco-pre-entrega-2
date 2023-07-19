@@ -1,0 +1,46 @@
+.flex-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.flex-container-100 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.flex-container-bottom {
+    margin-bottom: -2rem;
+}
+
+.container {
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .hero-text {
+            width: 50%;
+            padding-top: 2rem;
+            h1{
+                color:$violet-dark
+            }
+            h3 {
+                color: $violet-light;
+            }
+        }
+        .hero-img {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            
+            img {
+                display: flex;
+                align-items: center;
+                width: 100%;
+            }
+        }
+    }
+}
