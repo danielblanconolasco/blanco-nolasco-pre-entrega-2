@@ -1,0 +1,23 @@
+@mixin fullwidth-header ($bg-url,$bg-repeat,$bg-position,$bg-size) {
+    background-image: url(#{$bg-url});
+    background-repeat: $bg-repeat;
+    background-position: $bg-position;
+    background-size: $bg-size;
+}
+
+.hero-services-background {
+    @include fullwidth-header("../assets/img/cat-groom-background.jpg",no-repeat,center,cover)
+}
+
+.hero-groom-background {
+    @include fullwidth-header("../assets/img/cat-services-background.jpg",no-repeat,center,cover)
+}
+
+.hero-agenda-background {
+    @include fullwidth-header("../assets/img/cat-agenda-vet-01.jpg",
+    no-repeat,center,cover)
+}
+
+.hero-contact-background {
+    @include fullwidth-header("../assets/img/cat-contact-background.jpg",no-repeat,center,cover)
+}

@@ -73,8 +73,10 @@ header {
         }
         a {
             color: $menu-color;
+            transition: transform 0.6s easeOutSine;
             &:hover {
                 color:$white;
+                transform: scale(1.05);
             }
         }
     }

@@ -1,0 +1,33 @@
+@media (max-width:1024px) {
+    .section-servicios {
+        flex-direction: column;
+        
+        .servicios-title {
+            width: 100%;
+            h3 , p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .hero {
+        flex-direction: column;
+
+        .hero-text {
+            width: 100%;
+            text-align: center;
+        }
+
+        .hero-img {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .section-servicios {
+        width: 90%;
+    }
+}
