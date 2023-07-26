@@ -5,10 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Michigan Adopciones es un refugio de gatos sin fines de lucro que se dedica a encontrar hogares amorosos para gatos desamparados. Ofrecemos una variedad de servicios, que incluyen peluquería, atención veterinaria, hotel felino y más.">
+    <meta name="keywords" content="Michigan Adopciones, refugio de gatos, refugio de animales, gatos, mascotas, adopción, rescate, donación">
+    <meta name="author" content="Daniel Blanco">
+    <meta name="copyright" content="Daniel Blanco - Graphic Designer">
+    <meta property="og:title" content="Michigan Adopciones">
+    <meta property="og:site_name" content="Michigan Adopciones">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/img/meta-image.jpg">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:alt" content="Adopta un michi, llénate de amor y pásala de pelos">
+    <meta property="og:image:width" content="598">
+    <meta property="og:image:height" content="596">
     <script src="https://kit.fontawesome.com/efc9165130.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Michigan Adopciones</title>
+    <title>Agenda | Michigan Adopciones</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -70,19 +84,30 @@
                 <h4 class="violet-dark">Agenda de atención</h4>
                 <p class="grey-dark">Llena el formulario y a la brevedad te contestaremos la disponibilidad.</p>
                 <form>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <label for="nombre-usuario" class="form-label">Nombre Humano</label>
+                            <input type="text" id="usuario" placeholder="Ingresa tu nombre humano" required class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <label for="mail" class="form-label">Correo Humano</label>
+                            <input type="mail" id="mail" placeholder="Ingresa tu mail" required class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <fieldset>
+                                <legend class="col-form-label">Sexo de la mascota</legend>
+                                <label for="hombre">Macho</label>
+                                <input type="radio" name="sexo" id="macho" value="macho">
+                                <label for="mujer">Hembra</label>
+                                <input type="radio" name="sexo" id="hembra" value="hembra">
+                            </fieldset>
 
-                    <label for="nombre-usuario">Nombre Humano</label>
-                    <input type="text" id="usuario" placeholder="Ingresa tu nombre humano" required>
-                    <label for="mail"></label>
-                    <input type="mail" id="mail" placeholder="Ingresa tu mail" required>
+                        </div>
 
-                    <fieldset>
-                        <legend>Sexo de la mascota</legend>
-                        <label for="hombre">Macho</label>
-                        <input type="radio" name="sexo" id="macho" value="macho">
-                        <label for="mujer">Hembra</label>
-                        <input type="radio" name="sexo" id="hembra" value="hembra">
-                    </fieldset>
+
+                    </div>
+                    
+
 
                     <fieldset>
                         <legend>Tipo de servicio</legend>

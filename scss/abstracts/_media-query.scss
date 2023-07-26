@@ -24,10 +24,47 @@
             width: 80%;
         }
     }
+
+    .professionals{
+        flex-direction: column;
+        gap: 2rem;    
+    }    
+
+    .cards-servicios {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        grid-template-rows: auto;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .card-veterinary {
+        flex-direction: row-reverse;
+
+        .vet-title {
+            text-align: start;
+        }
+    }
 }
 
 @media (max-width:480px) {
     .section-servicios {
         width: 90%;
+    }
+
+    .card-service {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:375px) {
+    .card-veterinary {
+        flex-direction: column;
+
+        .vet-title {
+            text-align: center;
+        }
     }
 }

@@ -1,0 +1,44 @@
+.btn-normal {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-family: "Mona Sans";
+    font-weight: 700;
+    transition: 0.15s padding ease-out;
+
+    &:hover {
+        padding: 0.5rem 1rem;
+    }
+}
+
+.btn-violet-dark {
+    background-color: $violet-dark;
+
+    a {
+        color: $white;
+    }
+}
+
+.btn-violet-light {
+    background-color: $violet-light;
+
+    a {
+        color: $white;
+    }
+}
+
+.btn-border-dark {
+    border: .0625rem solid $violet-dark;
+
+    a {
+        color: $violet-dark;
+    }
+}
+
+.btn-border-light {
+    border: .0625rem solid $violet-light;
+
+    a {
+        color: $violet-light;
+    }
+}
