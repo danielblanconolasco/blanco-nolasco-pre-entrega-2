@@ -139,3 +139,26 @@
         border-radius: 1rem;
     }
 }
+
+.cards-services {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+    .cards-services-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cards-services-content {
+        display: flex;
+        gap: 2rem;
+        
+        .card-service {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+}

@@ -9,24 +9,7 @@ header {
     position: sticky;
     top: -1.9375rem;
     z-index: 2;
-    
-        @media (max-width: 1024px) {
-    
-            top: -2rem;
-    
-            .nav-right {
-                width: 100%;
-                flex-direction: column;
-            }
-    
-        }
-    
-        @media (max-width: 556px) {
-    
-            position: relative;
-            top: 0px;
-    
-        }
+        
     .header-top {
         display: flex;
         justify-content: space-between;
@@ -73,7 +56,7 @@ header {
         }
         a {
             color: $menu-color;
-            transition: transform 0.6s easeOutSine;
+            transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
             &:hover {
                 color:$white;
                 transform: scale(1.05);

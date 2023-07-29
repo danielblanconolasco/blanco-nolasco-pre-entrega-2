@@ -1,4 +1,12 @@
 @media (max-width:1024px) {
+    header {
+        top: -2rem;
+    
+            .nav-right {
+                width: 100%;
+                flex-direction: column;
+            }
+    }
     .section-servicios {
         flex-direction: column;
         
@@ -10,6 +18,12 @@
         }
     }
 }
+@media (max-width:913px) {
+    .footer-hero {
+        flex-direction: column;
+    }
+}
+
 
 @media (max-width:768px) {
     .hero {
@@ -45,6 +59,19 @@
         .vet-title {
             text-align: start;
         }
+    }
+    .footer-menu {
+        ul {
+            justify-content: space-evenly;
+        }
+
+    }
+}
+
+@media (max-width: 556px) {
+    header{
+        position: relative;
+        top: 0px;
     }
 }
 

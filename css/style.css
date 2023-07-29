@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 .white {
   color: #ffffff;
 }
@@ -61,6 +57,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   font-weight: 400;
   font-size: 0.875rem;
@@ -72,21 +72,6 @@ header {
   position: sticky;
   top: -1.9375rem;
   z-index: 2;
-}
-@media (max-width: 1024px) {
-  header {
-    top: -2rem;
-  }
-  header .nav-right {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-@media (max-width: 556px) {
-  header {
-    position: relative;
-    top: 0px;
-  }
 }
 header .header-top {
   display: flex;
@@ -127,7 +112,7 @@ header .navbar .form-nav label {
 }
 header .navbar a {
   color: #d7b7ff;
-  transition: transform 0.6s easeOutSine;
+  transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
 }
 header .navbar a:hover {
   color: #ffffff;
@@ -152,11 +137,6 @@ footer .container-footer .footer-hero {
   gap: 2rem;
   justify-content: space-between;
 }
-@media (max-width: 913px) {
-  footer .container-footer .footer-hero {
-    flex-direction: column;
-  }
-}
 footer .container-footer .footer-hero .footer-menu ul {
   display: flex;
   gap: 2rem;
@@ -164,16 +144,16 @@ footer .container-footer .footer-hero .footer-menu ul {
   row-gap: 1rem;
   padding-left: 0;
 }
-@media (max-width: 768px) {
-  footer .container-footer .footer-hero .footer-menu ul {
-    justify-content: space-evenly;
-  }
-}
-footer .container-footer .footer-hero li {
+footer .container-footer .footer-hero .footer-menu li {
   list-style: none;
 }
 footer .container-footer .footer-hero a {
   color: #B0B0B0;
+  transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
+}
+footer .container-footer .footer-hero a:hover {
+  color: #ffffff;
+  transform: scale(1.05);
 }
 
 .hero-services-background {
@@ -445,12 +425,39 @@ main {
   border-radius: 1rem;
 }
 
+.cards-services {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.cards-services .cards-services-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards-services .cards-services-content {
+  display: flex;
+  gap: 2rem;
+}
+.cards-services .cards-services-content .card-service {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .form-control:focus {
   border-color: #5A1BA5;
   box-shadow: 0 0 0 0.25rem rgba(90, 27, 165, 0.3411764706);
 }
 
 @media (max-width: 1024px) {
+  header {
+    top: -2rem;
+  }
+  header .nav-right {
+    width: 100%;
+    flex-direction: column;
+  }
   .section-servicios {
     flex-direction: column;
   }
@@ -459,6 +466,11 @@ main {
   }
   .section-servicios .servicios-title h3, .section-servicios .servicios-title p {
     text-align: center;
+  }
+}
+@media (max-width: 913px) {
+  .footer-hero {
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
@@ -489,6 +501,15 @@ main {
   }
   .card-veterinary .vet-title {
     text-align: start;
+  }
+  .footer-menu ul {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 556px) {
+  header {
+    position: relative;
+    top: 0px;
   }
 }
 @media (max-width: 480px) {
