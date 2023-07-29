@@ -28,15 +28,16 @@ footer {
                 
                 li {
                     list-style: none;
+                    transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
+                    &:hover {
+                        transform: scale(1.05);}
                     
-                }
-            }
-            a {
-                color: $menu-footer;
-                transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
-                &:hover {
-                    color:$white;
-                    transform: scale(1.05);
+                    a {
+                        color: $menu-footer;
+                        &:hover {
+                            color:$white;
+                        }
+                    }
                 }
             }
         }
