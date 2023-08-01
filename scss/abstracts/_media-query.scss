@@ -1,26 +1,34 @@
 @media (max-width:1024px) {
     header {
         top: -2rem;
-    
-            .nav-right {
-                width: 100%;
-                flex-direction: column;
-            }
+
+        .nav-right {
+            width: 100%;
+            flex-direction: column;
+        }
     }
+
     .section-servicios {
         flex-direction: column;
-        
+
         .servicios-title {
             width: 100%;
-            h3 , p {
+
+            h3,
+            p {
                 text-align: center;
             }
         }
     }
+
     .cards-grid-3-items {
         grid-template-columns: repeat(3, 1fr);
-        }
+    }
+    .hero-background {
+        height: 30vh;
+    }
 }
+
 @media (max-width:913px) {
     .footer-hero {
         flex-direction: column;
@@ -42,10 +50,10 @@
         }
     }
 
-    .professionals{
+    .professionals {
         flex-direction: column;
-        gap: 2rem;    
-    }    
+        gap: 2rem;
+    }
 
     .cards-servicios {
         width: 100%;
@@ -63,20 +71,25 @@
             text-align: start;
         }
     }
+
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
-        }
-    
     }
+
     .footer-menu {
         ul {
             justify-content: space-evenly;
         }
-
     }
 
+    .cat-highlighted-item {
+        flex-direction: column;
+    }
+}
+
+
 @media (max-width: 556px) {
-    header{
+    header {
         position: relative;
         top: 0px;
     }
@@ -91,6 +104,7 @@
         text-align: center;
         align-items: center;
     }
+
     .cards-grid {
         grid-template-columns: repeat(1, 1fr);
 
